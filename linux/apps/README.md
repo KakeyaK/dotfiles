@@ -1,0 +1,1 @@
+# Run cat requirements.txt | xargs yay -S --noconfirm to download what is listed on requirements.txt

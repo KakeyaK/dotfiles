@@ -1,0 +1,13 @@
+{
+  "include": ["/usr/share/sway/templates/waybar/config.jsonc"],
+
+  "battery": {
+    "interval": 30,
+    "states": {},
+    "format-charging": "",
+    "format": "",
+    "format-icons": [],
+    "tooltip": false
+  }
+}
+
