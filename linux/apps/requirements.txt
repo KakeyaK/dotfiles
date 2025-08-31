@@ -22,3 +22,4 @@ stow
 rofi-calc
 neofetch
 stow
+shikane
