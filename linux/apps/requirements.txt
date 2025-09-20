@@ -1,4 +1,3 @@
-# Apps
 bitwarden
 dolphin
 gnome-calculator
@@ -8,13 +7,11 @@ brave
 obsidian
 prusa-slicer
 
-# Code
 docker
 docker-compose
 visual-studio-code-bin
 dbeaver
 
-# Utils
 unzip
 vlc
 wl-clipboard
