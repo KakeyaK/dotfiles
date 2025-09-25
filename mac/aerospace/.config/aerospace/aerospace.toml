@@ -279,7 +279,7 @@ automatically-unhide-macos-hidden-apps = true
 [workspace-to-monitor-force-assignment]
     # Work workroom assignments
     w = 'built-in'
-    q = 'PHL'
+    q = '23MP55'
     # Personal workroom assignments
     pw = 'built-in'
-    pq = 'PHL'
+    pq = '23MP55'
