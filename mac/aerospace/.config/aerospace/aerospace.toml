@@ -4,8 +4,6 @@
 # USAGE:
 # - Work workroom (default): workspaces 1, 2, 3, ..., 10, q, w
 # - Personal workroom: workspaces p1, p2, p3, ..., p10, pq, pw
-# - Switch to personal workroom: Ctrl+Alt+P
-# - Switch back to work workroom: Ctrl+Alt+W (when in personal mode)
 # - All other keybindings work the same in both workrooms
 # 
 # The current workroom will be visible in the menu bar through the workspace name:
@@ -162,6 +160,11 @@ automatically-unhide-macos-hidden-apps = true
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     # alt-tab = 'workspace-back-and-forth'
+    
+    # Workspace navigation - next/previous workspace
+    alt-rightSquareBracket = 'exec-and-forget bash -c "aerospace list-workspaces --monitor focused --empty no | aerospace workspace next --wrap-around"'
+    alt-leftSquareBracket = 'exec-and-forget bash -c "aerospace list-workspaces --monitor focused --empty no | aerospace workspace prev --wrap-around"'
+
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
     alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
@@ -209,6 +212,10 @@ automatically-unhide-macos-hidden-apps = true
     alt-ctrl-k = 'move-workspace-to-monitor down'
     alt-ctrl-l = 'move-workspace-to-monitor right'
     alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+    
+    # Workspace navigation - next/previous workspace
+    alt-rightSquareBracket = 'exec-and-forget bash -c "aerospace list-workspaces --monitor focused --empty no | aerospace workspace next --wrap-around"'
+    alt-leftSquareBracket = 'exec-and-forget bash -c "aerospace list-workspaces --monitor focused --empty no | aerospace workspace prev --wrap-around"'
 
     # === PERSONAL WORKSPACES (p1-p10, pq, pw) ===
     # Switch to personal workspaces
