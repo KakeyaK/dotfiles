@@ -23,6 +23,7 @@
 'org.kde.dolphin' = ''
 'obsidian' = '󰍔'
 'PrusaSlicer' = '󰐫'
+'cursor' = '󰋙'
 '/[Cc]alculator/' = '󰆕'
 '/^YouTube Music( - .*)?$/' = ''
 '/^YouTube( - .*)?$/' = '󰗃'
