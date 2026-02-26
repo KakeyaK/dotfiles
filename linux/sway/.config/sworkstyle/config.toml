@@ -27,3 +27,5 @@
 '/[Cc]alculator/' = '󰆕'
 '/^YouTube Music( - .*)?$/' = ''
 '/^YouTube( - .*)?$/' = '󰗃'
+'zoom' = ''
+'Meeting' = ''
