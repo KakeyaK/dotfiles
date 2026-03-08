@@ -24,3 +24,5 @@ logiops
 syncthing
 polkit
 polkit-gnome
+
+vicinae-bin
