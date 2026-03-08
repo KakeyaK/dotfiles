@@ -21,4 +21,5 @@ neofetch
 stow
 shikane
 logiops
-syncthing
+
+vicinae-bin
