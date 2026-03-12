@@ -3,20 +3,20 @@ name = "2-display"
 
 [[profile.output]]
 enable = true
-search = ["m=LG HDR WFHD", "s=0x00029416", "v=LG Electronics"]
-mode = "2560x1080@59.978Hz"
-position = "0,0"
-scale = 1.0
+search = ["m=0x416E", "s=", "v=Samsung Display Corp."]
+mode = "2880x1620@120.002Hz"
+position = "0,502"
+scale = 2.0
 transform = "normal"
 adaptive_sync = false
 
 [[profile.output]]
 enable = true
-search = ["m=0x416E", "s=", "v=Samsung Display Corp."]
-mode = "2880x1620@120.002Hz"
-position = "2560,423"
-scale = 2.0
-transform = "180"
+search = ["m=LG HDR WFHD", "s=0x00029416", "v=LG Electronics"]
+mode = "2560x1080@59.978Hz"
+position = "1440,0"
+scale = 1.0
+transform = "normal"
 adaptive_sync = false
 
 [[profile]]

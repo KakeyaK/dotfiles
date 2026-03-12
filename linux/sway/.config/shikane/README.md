@@ -33,3 +33,6 @@ shikane --help
 - Add or remove a `[[profile.output]]` block to change a layout.
 - Update `mode`, `position`, `scale`, or `transform` to tweak placement and rotation.
 - Keep `search` values stable so outputs are identified correctly.
+
+## Using
+Edit the display setup with wdisplays and then run `shikanectl export "<name>"`. It'll give you the configuration for the current setup to be added to `config.toml`
