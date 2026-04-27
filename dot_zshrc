@@ -54,6 +54,8 @@ alias ls="eza -a --icons=auto"
 alias la="eza -lahg --icons=auto"
 # Visualização em árvore
 alias tree="eza --tree --icons=auto"
+
+alias cg="cd ~/.config"
 # =============================================================================
 # Env vars
 # =============================================================================
