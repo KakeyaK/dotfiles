@@ -1,0 +1,37 @@
+ITEM_DIR="$CONFIG_DIR/items"
+
+sketchybar --bar position=top height=32 blur_radius=30 color=0x10000000 padding_left=8 padding_right=8
+
+default=(
+	icon.font="sketchybar-app-font:Regular:18.0"
+	icon.color=0xffffffff
+	icon.padding_left=3
+	icon.padding_right=3
+
+	label.font="SF Pro:Semibold:14.0"
+	label.color=0xffffffff
+	label.padding_left=3
+	label.padding_right=3
+)
+
+sketchybar --default "${default[@]}"
+
+# Left side
+source "$ITEM_DIR/workspace/item.sh"
+
+# Right side
+source "$ITEM_DIR/ical/item.sh"
+source "$ITEM_DIR/clock/item.sh"
+
+sketchybar --add item spacer1 right \
+	--set spacer1 label="|" label.font="SF Pro:Semibold:18.0" label.color=0x80ffffff
+
+source "$ITEM_DIR/battery/item.sh"
+source "$ITEM_DIR/wifi/item.sh"
+source "$ITEM_DIR/bluetooth/item.sh"
+source "$ITEM_DIR/bluetooth_headphone/item.sh"
+source "$ITEM_DIR/mute/item.sh"
+source "$ITEM_DIR/volume/item.sh"
+source "$ITEM_DIR/aerospace_mode/item.sh"
+
+sketchybar --update

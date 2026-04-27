@@ -1,0 +1,28 @@
+0000000000000000000000000000000000000000 d20ae47b8f5bae8de7036affbcf7fe5a8061722c Kim Kakeya <kimkakeya@gmail.com> 1776005439 -0300	commit (initial): init state
+d20ae47b8f5bae8de7036affbcf7fe5a8061722c c92aa5efeb1f567de9a2a16f898371bbc4e12db1 Kim Kakeya <kimkakeya@gmail.com> 1776171691 -0300	commit: v0
+c92aa5efeb1f567de9a2a16f898371bbc4e12db1 1cb5c8d2875f66d897ff6e11c8ef8f9181570675 Kim Kakeya <kimkakeya@gmail.com> 1776176277 -0300	commit: v1
+1cb5c8d2875f66d897ff6e11c8ef8f9181570675 4fc05801e14e356a78af609030f76a176c03953d Kim Kakeya <kimkakeya@gmail.com> 1776212312 -0300	commit: v2
+4fc05801e14e356a78af609030f76a176c03953d f18cf0bb6238ed78d5d3f128d10c7e44e4a46dd0 Kim Kakeya <kimkakeya@gmail.com> 1776217880 -0300	commit: v3: accordions and overall niceness
+f18cf0bb6238ed78d5d3f128d10c7e44e4a46dd0 7f16e4e6674e5ffda3cccb50628ceec9cbaa4f31 Kim Kakeya <kimkakeya@gmail.com> 1776220495 -0300	commit: v4: aerospace feito, mas feio
+7f16e4e6674e5ffda3cccb50628ceec9cbaa4f31 f6b630c4ca79a62619b230e30a4a5275d2b3ce2f Kim Kakeya <kimkakeya@gmail.com> 1776639520 -0300	commit: add initial example of system icons
+f6b630c4ca79a62619b230e30a4a5275d2b3ce2f 86c2bfe23cfa7ea18da6118b424f2a4c41b51aba Kim Kakeya <kimkakeya@gmail.com> 1776709250 -0300	commit: calendar
+86c2bfe23cfa7ea18da6118b424f2a4c41b51aba bce79eae91380c5a751d08d2ddf9c896e6253ecd Kim Kakeya <kimkakeya@gmail.com> 1776709396 -0300	commit: using style file
+bce79eae91380c5a751d08d2ddf9c896e6253ecd ec1c4646b1c968e2d4364b70d4229a08f3d110ac Kim Kakeya <kimkakeya@gmail.com> 1776709401 -0300	commit: ical
+ec1c4646b1c968e2d4364b70d4229a08f3d110ac bce79eae91380c5a751d08d2ddf9c896e6253ecd Kim Kakeya <kimkakeya@gmail.com> 1776710046 -0300	reset: moving to HEAD~
+bce79eae91380c5a751d08d2ddf9c896e6253ecd 86c2bfe23cfa7ea18da6118b424f2a4c41b51aba Kim Kakeya <kimkakeya@gmail.com> 1776710054 -0300	reset: moving to HEAD~
+86c2bfe23cfa7ea18da6118b424f2a4c41b51aba 7256f52d11bc4400f7d7ae7a56ae347ae6c226c1 Kim Kakeya <kimkakeya@gmail.com> 1776710094 -0300	commit (amend): calendar
+7256f52d11bc4400f7d7ae7a56ae347ae6c226c1 2da993b435e85278b965316544b1d40bed0437b9 Kim Kakeya <kimkakeya@gmail.com> 1776710113 -0300	commit: refactor aerospace workspaces
+2da993b435e85278b965316544b1d40bed0437b9 a21e3f63f97ebf8179c85e79f0091525ddf78c4e Kim Kakeya <kimkakeya@gmail.com> 1776711236 -0300	commit: bluetooth headphone
+a21e3f63f97ebf8179c85e79f0091525ddf78c4e 0592c7f6d6f52d5b7beba18c8c22d4696cbb1ca7 Kim Kakeya <kimkakeya@gmail.com> 1776735123 -0300	commit: v5 everything I wanted, but ugly
+0592c7f6d6f52d5b7beba18c8c22d4696cbb1ca7 beaad4c42240d7ae7549051a844cf319662e6a62 Kim Kakeya <kimkakeya@gmail.com> 1776735155 -0300	commit (amend): v5 everything I wanted, but ugly
+beaad4c42240d7ae7549051a844cf319662e6a62 ea8562e8d1142efc8707e6b88bae55b5576595b6 Kim Kakeya <kimkakeya@gmail.com> 1776810799 -0300	commit: v6 icones do lado direito bontios
+ea8562e8d1142efc8707e6b88bae55b5576595b6 0f663e22cb64391f230f7c0fcca0d6f40bb241cb Kim Kakeya <kimkakeya@gmail.com> 1776810804 -0300	commit (amend): v6 icones do lado direito bontios
+0f663e22cb64391f230f7c0fcca0d6f40bb241cb d3869707fb58828fbd51050d89e160a5afe3dbbc Kim Kakeya <kimkakeya@gmail.com> 1776812483 -0300	commit: feat: improving workspaces speed
+d3869707fb58828fbd51050d89e160a5afe3dbbc cc6857e17326a2f19bcbd123e56d6e479958128c Kim Kakeya <kimkakeya@gmail.com> 1776813741 -0300	commit: feat: making aerospace workspace indicator beautiful
+cc6857e17326a2f19bcbd123e56d6e479958128c 729f08f491ba2913143bfab5331cf5636d478a83 Kim Kakeya <kimkakeya@gmail.com> 1776881478 -0300	commit: feat: beautiful workspace
+729f08f491ba2913143bfab5331cf5636d478a83 6775ded0c7b74ef70a4ba152e99c6a8a4b4ec0bc Kim Kakeya <kimkakeya@gmail.com> 1776882199 -0300	commit: possible fix to segfault error
+6775ded0c7b74ef70a4ba152e99c6a8a4b4ec0bc df9151dfdc9d70077195c0d0143aac565109bfc3 Kim Kakeya <kimkakeya@gmail.com> 1776883323 -0300	commit: aerospace mode indicator
+df9151dfdc9d70077195c0d0143aac565109bfc3 cdaa518b12d7c4a7a31526ba7854fb4bead76c73 Kim Kakeya <kimkakeya@gmail.com> 1776883405 -0300	commit: v7: final adjustments
+cdaa518b12d7c4a7a31526ba7854fb4bead76c73 c06e2f89ab08f8b1bfd5cbb0d62a3047c7def239 Kim Kakeya <kimkakeya@gmail.com> 1776903747 -0300	commit: feat: fixing seg fault again
+c06e2f89ab08f8b1bfd5cbb0d62a3047c7def239 e861e5d29ce156c331cfb99eaf912458dab99afc Kim Kakeya <kimkakeya@gmail.com> 1776924749 -0300	commit: feat: make aerospace workspaces clickable
+e861e5d29ce156c331cfb99eaf912458dab99afc d461a858bcb00fd08dd9622f9bb0f0d5b4fa8465 Kim Kakeya <kimkakeya@gmail.com> 1777085319 -0300	commit: battery

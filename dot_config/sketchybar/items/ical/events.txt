@@ -1,0 +1,11 @@
+Looking for calendars.txt at: /Users/kim/.config/sketchybar/helpers/zigotica_calendar_events/bin/calendars.txt
+Selected calendars:
+- Kim Kakeya (Pessoal)
+- Trabalho
+- Feriados no Brasil
+- Estudos
+- USP
+-----
+2026-04-27 00:00-23:59 | Lucas Piquet's birthday
+2026-04-27 10:00-11:40 | MAC0352 - Turma 2026145 (Helder May Nunes da Silva Oliveira)
+2026-04-27 17:00-18:00 | Aula de Francês

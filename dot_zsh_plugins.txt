@@ -1,0 +1,5 @@
+zsh-users/zsh-completions
+Aloxaf/fzf-tab
+ohmyzsh/ohmyzsh path:lib/directories.zsh
+ohmyzsh/ohmyzsh path:plugins/extract
+zsh-users/zsh-syntax-highlighting

@@ -1,0 +1,86 @@
+# =============================================================================
+# ANTIDOTE PLUGIN MANAGER (Homebrew)
+# =============================================================================
+source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
+
+# Setup Completion Caching (Run this BEFORE plugins)
+autoload -Uz compinit
+if [[ -n ${ZDOTDIR:-$HOME}/.zcompdump(#qN.mh+24) ]]; then
+    compinit
+else
+    compinit -C
+fi
+
+# Static Plugin Loading (Fastest method)
+zsh_plugins_txt=${ZDOTDIR:-~}/.zsh_plugins.txt
+zsh_plugins_sh=${ZDOTDIR:-~}/.zsh_plugins.zsh
+
+if [[ ! -f $zsh_plugins_sh || $zsh_plugins_txt -nt $zsh_plugins_sh ]]; then
+  antidote bundle <$zsh_plugins_txt >|$zsh_plugins_sh
+fi
+source $zsh_plugins_sh
+
+# =============================================================================
+# PLUGIN CONFIGURATIONS & KEYBINDINGS
+# =============================================================================
+bindkey -e
+bindkey '^[[A' history-beginning-search-backward
+bindkey '^[[B' history-beginning-search-forward
+
+# =============================================================================
+# Aliases
+# =============================================================================
+alias python="python3"
+
+alias vim="nvim"
+
+alias zj="zellij"
+alias zl="zellij list-sessions"
+alias za="zellij attach"
+alias zs="zellij action switch-session"
+alias zk="zellij kill-session"
+alias zka="zellij kill-all-sessions"
+alias zd="zellij delete-session"
+alias zda="zellij delete-all-sessions"
+
+alias btw="fastfetch"
+alias siri="apfel --stream"
+
+alias cat="bat"
+
+# Substitui o ls padrão
+alias ls="eza -a --icons=auto"
+# Lista com detalhes incluindo arquivos ocultos
+alias la="eza -lahg --icons=auto"
+# Visualização em árvore
+alias tree="eza --tree --icons=auto"
+# =============================================================================
+# Env vars
+# =============================================================================
+export EDITOR="nvim"
+export BAT_THEME="Dracula"
+export EZA_CONFIG_DIR="/Users/kim/.config/eza"
+
+# =============================================================================
+# Terminal Multiplexer
+# =============================================================================
+if [[ "$TERM_PROGRAM" != "vscode" ]]; then
+    if [[ -z "$ZELLIJ" ]]; then
+        CURRENT_SESSIONS=$(zellij list-sessions --short 2>/dev/null)
+        
+        for i in {1..100}; do
+            if ! echo "$CURRENT_SESSIONS" | grep -qx "$i"; then
+                zellij attach -c "$i"            
+                break
+            fi
+        done
+    fi
+fi
+
+# Added by Antigravity
+export PATH="/Users/kim/.antigravity/antigravity/bin:$PATH"
+
+# =============================================================================
+# STARSHIP PROMPT (Must be at the end)
+# =============================================================================
+eval "$(starship init zsh)"

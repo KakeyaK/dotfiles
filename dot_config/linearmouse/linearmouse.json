@@ -1,0 +1,48 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.4",
+  "schemes" : [
+    {
+      "buttons" : {
+
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xb034",
+          "productName" : "MX Master 3S",
+          "serialNumber" : "82930EEF",
+          "vendorID" : "0x46d"
+        }
+      },
+      "scrolling" : {
+        "modifiers" : {
+          "vertical" : {
+            "option" : {
+              "type" : "pinchZoom"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "trackpad",
+          "productID" : "0x0",
+          "productName" : "Apple Internal Keyboard \/ Trackpad",
+          "serialNumber" : "FM7HP30C5TP0000UQS+AKTN",
+          "vendorID" : "0x0"
+        }
+      },
+      "scrolling" : {
+        "modifiers" : {
+          "vertical" : {
+            "option" : {
+              "type" : "pinchZoom"
+            }
+          }
+        }
+      }
+    }
+  ]
+}
