@@ -28,6 +28,22 @@ bindkey '^[[A' history-beginning-search-backward
 bindkey '^[[B' history-beginning-search-forward
 
 # =============================================================================
+# HISTORY CONFIG
+# =============================================================================
+export HISTFILE="$HOME/.zsh_history"
+export HISTSIZE=10000
+export SAVEHIST=10000
+
+# Write to the history file immediately, not just when the shell exits
+setopt INC_APPEND_HISTORY 
+
+# Share history across all active zsh sessions (Zellij panes)
+setopt SHARE_HISTORY 
+
+# Save the timestamp and duration of each command
+setopt EXTENDED_HISTORY
+
+# =============================================================================
 # Aliases
 # =============================================================================
 alias python="python3"
@@ -47,6 +63,7 @@ alias btw="fastfetch"
 alias siri="apfel --stream"
 
 alias cat="bat"
+alias rat="bat -p --pager=never"
 
 # Substitui o ls padrão
 alias ls="eza -a --icons=auto"
@@ -56,6 +73,8 @@ alias la="eza -lahg --icons=auto"
 alias tree="eza --tree --icons=auto"
 
 alias cg="cd ~/.config"
+alias hist="history"
+
 # =============================================================================
 # Env vars
 # =============================================================================
