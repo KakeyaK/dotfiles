@@ -11,6 +11,7 @@ confirm-close-surface = false
 quit-after-last-window-closed = true
 
 keybind = cmd+shift+n=new_window
+
 # --- Zellij Passthrough Bindings ---
 keybind = cmd+t=unbind
 keybind = cmd+n=unbind
