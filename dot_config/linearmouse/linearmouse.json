@@ -1,9 +1,21 @@
 {
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.4",
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.11.0",
   "schemes" : [
     {
       "buttons" : {
-
+        "autoScroll" : {
+          "enabled" : false,
+          "mode" : "hold",
+          "preserveNativeMiddleClick" : true,
+          "speed" : 1.4,
+          "trigger" : {
+            "button" : 2,
+            "command" : false,
+            "control" : false,
+            "option" : false,
+            "shift" : false
+          }
+        }
       },
       "if" : {
         "device" : {
