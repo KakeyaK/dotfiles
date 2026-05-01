@@ -1,6 +1,6 @@
 ITEM_DIR="$CONFIG_DIR/items"
 
-sketchybar --bar position=top height=32 blur_radius=30 color=0x10000000 padding_left=8 padding_right=8
+sketchybar --bar position=top height=35 blur_radius=8 color=0x10000000 padding_left=8 padding_right=8
 
 default=(
 	icon.font="sketchybar-app-font:Regular:18.0"
