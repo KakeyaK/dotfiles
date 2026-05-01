@@ -3,7 +3,7 @@ theme = Dracula
 window-padding-x = 10
 window-padding-y = 10
 # background-blur = macos-glass-clear
-background-opacity=0.908
+background-opacity=0.8
 background-blur=40
 
 macos-option-as-alt = true
