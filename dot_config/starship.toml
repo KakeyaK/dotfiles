@@ -1,3 +1,6 @@
 [character]
 success_symbol = "[\\$](bold magenta)"
 error_symbol = "[\\$](bold red)"
+[directory]
+truncation_length = 0
+truncate_to_repo = false
