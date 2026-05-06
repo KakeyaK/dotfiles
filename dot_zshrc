@@ -19,6 +19,7 @@ if [[ ! -f $zsh_plugins_sh || $zsh_plugins_txt -nt $zsh_plugins_sh ]]; then
   antidote bundle <$zsh_plugins_txt >|$zsh_plugins_sh
 fi
 source $zsh_plugins_sh
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # =============================================================================
 # PLUGIN CONFIGURATIONS & KEYBINDINGS
@@ -75,6 +76,7 @@ alias tree="eza --tree --icons=auto"
 alias cg="cd ~/.config"
 alias hist="history"
 
+alias ag="antigravity"
 # =============================================================================
 # Env vars
 # =============================================================================
