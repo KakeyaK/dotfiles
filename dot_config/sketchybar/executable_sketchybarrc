@@ -3,7 +3,7 @@ ITEM_DIR="$CONFIG_DIR/items"
 sketchybar --bar position=top height=35 blur_radius=8 color=0x10000000 padding_left=8 padding_right=8
 
 default=(
-	icon.font="sketchybar-app-font:Regular:18.0"
+	icon.font="Hack Nerd Font:Regular:18.0"
 	icon.color=0xffffffff
 	icon.padding_left=3
 	icon.padding_right=3
@@ -32,6 +32,7 @@ source "$ITEM_DIR/bluetooth/item.sh"
 source "$ITEM_DIR/bluetooth_headphone/item.sh"
 source "$ITEM_DIR/mute/item.sh"
 source "$ITEM_DIR/volume/item.sh"
+source "$ITEM_DIR/nightshift/item.sh"
 source "$ITEM_DIR/aerospace_mode/item.sh"
 
 sketchybar --update
