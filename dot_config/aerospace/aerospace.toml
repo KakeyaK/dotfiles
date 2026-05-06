@@ -49,6 +49,7 @@ persistent-workspaces = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'q',
     outer.bottom =     0
     outer.top = [{ monitor.'built-in' = 5 }, { monitor.'LG HDR WFHD' = 35 }, 5]
     outer.right =      5
+
 [mode.main.binding]
     alt-period = ['layout tiles horizontal vertical', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
     alt-comma = ['layout accordion horizontal vertical', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
@@ -62,15 +63,15 @@ persistent-workspaces = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'q',
     alt-k = 'focus --boundaries all-monitors-outer-frame up'
     alt-l = 'focus --boundaries all-monitors-outer-frame right'
 
-    alt-shift-h = ['move  --boundaries all-monitors-outer-frame left', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
-    alt-shift-j = ['move --boundaries all-monitors-outer-frame down', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
-    alt-shift-k = ['move --boundaries all-monitors-outer-frame up', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
-    alt-shift-l = ['move --boundaries all-monitors-outer-frame right', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
-
-    alt-ctrl-h = 'move-workspace-to-monitor left'
-    alt-ctrl-j = 'move-workspace-to-monitor up'
-    alt-ctrl-k = 'move-workspace-to-monitor down'
-    alt-ctrl-l = 'move-workspace-to-monitor right'
+    alt-shift-h = ['move left', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
+    alt-shift-j = ['move down', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
+    alt-shift-k = ['move up', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
+    alt-shift-l = ['move right', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
+    
+    alt-ctrl-h = 'join-with left'
+    alt-ctrl-j = 'join-with down'
+    alt-ctrl-k = 'join-with up'
+    alt-ctrl-l = 'join-with right'
 
     alt-1 = 'workspace 1'
     alt-2 = 'workspace 2'
@@ -99,13 +100,13 @@ persistent-workspaces = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'q',
     alt-shift-w = ['move-node-to-workspace w', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
 
     alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+    alt-shift-r = 'flatten-workspace-tree'
 
-    alt-shift-t = 'mode personal'
-    alt-shift-semicolon = 'mode service'
+    alt-shift-t = 'mode secondary'
     alt-r = 'mode resize'
     alt-shift-c = 'reload-config'
 
-[mode.personal.binding]
+[mode.secondary.binding]
     alt-period = ['layout tiles horizontal vertical', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
     alt-comma = ['layout accordion horizontal vertical', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
     alt-shift-space = ['layout floating tiling', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
@@ -116,16 +117,15 @@ persistent-workspaces = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'q',
     alt-k = 'focus --boundaries all-monitors-outer-frame up'
     alt-l = 'focus --boundaries all-monitors-outer-frame right'
 
-    alt-shift-h = ['move --boundaries all-monitors-outer-frame left', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
-    alt-shift-j = ['move --boundaries all-monitors-outer-frame down', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
-    alt-shift-k = ['move --boundaries all-monitors-outer-frame up', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
-    alt-shift-l = ['move --boundaries all-monitors-outer-frame right', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
-
-    alt-ctrl-h = 'move-workspace-to-monitor left'
-    alt-ctrl-j = 'move-workspace-to-monitor up'
-    alt-ctrl-k = 'move-workspace-to-monitor down'
-    alt-ctrl-l = 'move-workspace-to-monitor right'
-    alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+    alt-shift-h = ['move left', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
+    alt-shift-j = ['move down', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
+    alt-shift-k = ['move up', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
+    alt-shift-l = ['move right', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
+    
+    alt-ctrl-h = 'join-with left'
+    alt-ctrl-j = 'join-with down'
+    alt-ctrl-k = 'join-with up'
+    alt-ctrl-l = 'join-with right'
     
     alt-1 = 'workspace p1'
     alt-2 = 'workspace p2'
@@ -140,7 +140,7 @@ persistent-workspaces = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'q',
     alt-q = 'workspace pq'
     alt-w = 'workspace pw'
 
-    # Move windows to personal workspaces
+    # Move windows to secondary workspaces
     alt-shift-1 = ['move-node-to-workspace p1', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
     alt-shift-2 = ['move-node-to-workspace p2', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
     alt-shift-3 = ['move-node-to-workspace p3', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
@@ -154,25 +154,12 @@ persistent-workspaces = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'q',
     alt-shift-q = ['move-node-to-workspace pq', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
     alt-shift-w = ['move-node-to-workspace pw', 'exec-and-forget sketchybar --trigger aerospace_workspace_change']
 
+    alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+    alt-shift-r = 'flatten-workspace-tree'
+
     alt-t = 'mode main'
-    alt-shift-semicolon = 'mode service'
     alt-r = 'mode resize'
     alt-shift-c = 'reload-config'
-
-[mode.service.binding]
-    esc = ['reload-config', 'mode main']
-    r = ['flatten-workspace-tree', 'mode main']
-    f = ['layout floating tiling', 'exec-and-forget sketchybar --trigger aerospace_workspace_change', 'mode main']
-    backspace = ['close-all-windows-but-current', 'mode main']
-
-    alt-shift-h = ['join-with left', 'mode main']
-    alt-shift-j = ['join-with down', 'mode main']
-    alt-shift-k = ['join-with up', 'mode main']
-    alt-shift-l = ['join-with right', 'mode main']
-
-    down = 'volume down'
-    up = 'volume up'
-    shift-down = ['volume set 0', 'mode main']
 
 [mode.resize.binding]
     h = 'resize width -100'
