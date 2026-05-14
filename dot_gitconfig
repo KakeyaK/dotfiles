@@ -3,3 +3,5 @@
 # Please adapt and uncomment the following lines:
 name = Kim Kakeya
 email = kimkakeya@gmail.com
+[init]
+	defaultBranch = main
