@@ -1,0 +1,21 @@
+{
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Frog.aiff &"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/kim/.claude/statusline-command.sh"
+  },
+  "effortLevel": "medium",
+  "theme": "dark",
+  "model": "haiku"
+}
