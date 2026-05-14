@@ -6,7 +6,9 @@ window-padding-y = 10
 background-opacity=0.8
 background-blur=40
 
-macos-option-as-alt = true
+desktop-notifications = true
+
+macos-option-as-alt = left 
 confirm-close-surface = false
 quit-after-last-window-closed = true
 
