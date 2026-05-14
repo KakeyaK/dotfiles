@@ -59,6 +59,7 @@ alias zk="zellij kill-session"
 alias zka="zellij kill-all-sessions"
 alias zd="zellij delete-session"
 alias zda="zellij delete-all-sessions"
+alias zkd="zellij kill-all-sessions && zellij delete-all-sessions"
 
 alias btw="fastfetch"
 alias siri="apfel --stream"
