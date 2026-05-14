@@ -1,0 +1,22 @@
+# dotfiles
+
+Adding new item to dotfiles repo: 
+```
+chezmoi add <path>
+```
+
+Resyncing items:
+```
+chezmoi re-add
+```
+
+For Homebrew dump file, run 
+```
+cd ~/.config/Homebrew/
+brew bundle dump
+```
+
+For applying dotfile config on computer: 
+```
+chezmoi apply
+```
