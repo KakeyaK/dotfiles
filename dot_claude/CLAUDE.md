@@ -50,3 +50,8 @@
 - **Simplicity First**: Make every change as simple as possible. Impact minimal code.
 - **No Laziness**: Find root causes. No temporary fixes. Senior developer standards.
 - **Minimat Impact**: Changes should only touch what's necessary. Avoid introducing bugs.
+
+## GIT
+Unless explicitly asked, do NOT use git commands that alter the repository status, like git add and git rm. 
+
+@RTK.md

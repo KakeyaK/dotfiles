@@ -1,0 +1,71 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk -F',' '$1==\"postgres\" && $2==\"no_index\"')",
+      "Bash(rtk make *)",
+      "Bash(rtk read *)",
+      "Bash(experiments/.venv/bin/python experiments/run.py delay)",
+      "Bash(experiments/.venv/bin/python experiments/parse.py delay)",
+      "Bash(rtk grep *)",
+      "Bash(rtk wc *)",
+      "Bash(rtk ls *)",
+      "Bash(rtk proxy *)",
+      "Bash(/bin/echo test123 *)",
+      "Bash(rtk find *)"
+    ]
+  },
+  "model": "opus",
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/afplay /System/Library/Sounds/Glass.aiff >/dev/null 2>&1 &"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/afplay /System/Library/Sounds/Glass.aiff >/dev/null 2>&1 &"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rtk hook claude"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/kim/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "pyright-lsp@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": false,
+    "claude-retrospective@bitwarden-marketplace": true,
+    "superpowers@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "bitwarden-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "bitwarden/ai-plugins"
+      }
+    }
+  },
+  "effortLevel": "high",
+  "theme": "dark"
+}
