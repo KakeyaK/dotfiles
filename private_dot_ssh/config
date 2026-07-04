@@ -1,2 +1,5 @@
 Host github.com
-  IdentityFile ~/.ssh/github_key
+    IdentityFile ~/.ssh/github_key
+
+Host gitlab.com
+    IdentityFile ~/.ssh/github_key
