@@ -14,14 +14,13 @@
       "Bash(rtk find *)"
     ]
   },
-  "model": "opus",
   "hooks": {
     "Notification": [
       {
         "hooks": [
           {
             "type": "command",
-            "command": "/usr/bin/afplay /System/Library/Sounds/Glass.aiff >/dev/null 2>&1 &"
+            "command": "bash /Users/kim/.claude/notify-hook.sh 'Claude needs your input'"
           }
         ]
       }
@@ -31,7 +30,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/usr/bin/afplay /System/Library/Sounds/Glass.aiff >/dev/null 2>&1 &"
+            "command": "bash /Users/kim/.claude/notify-hook.sh 'Claude finished'"
           }
         ]
       }
