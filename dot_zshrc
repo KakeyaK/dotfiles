@@ -88,7 +88,7 @@ export EZA_CONFIG_DIR="/Users/kim/.config/eza"
 # =============================================================================
 # Terminal Multiplexer
 # =============================================================================
-if [[ "$TERM_PROGRAM" != "vscode" ]]; then
+if [[ "$TERM_PROGRAM" != "vscode" && "$TERM_PROGRAM" != "zed" ]]; then
     if [[ -z "$ZELLIJ" ]]; then
         CURRENT_SESSIONS=$(zellij list-sessions --short 2>/dev/null)
         
