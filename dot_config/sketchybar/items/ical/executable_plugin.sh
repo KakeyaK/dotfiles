@@ -118,9 +118,11 @@ sketchybar -m --set ical label="$next_event_info"
 if [ -n "$next_event_info" ]; then
 	sketchybar -m --set clock \
 		label.y_offset=8 \
+		label.padding_left=110 \
 		label.font="SF Pro:Semibold:13.0"
 else
 	sketchybar -m --set clock \
+		label.padding_left=12 \
 		label.y_offset=-2 \
 		label.font="SF Pro:Semibold:15.0"
 fi
