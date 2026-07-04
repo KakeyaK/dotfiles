@@ -1,0 +1,454 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+	{
+		"context": "FileFinder || FileFinder > Picker > Editor",
+		"unbind": {
+			"cmd-shift-a": "file_finder::ToggleSplitMenu",
+		},
+	},
+	{
+		"context": "Workspace",
+		"unbind": {
+			"alt-cmd-j": "multi_workspace::ToggleWorkspaceSidebar",
+		},
+	},
+	{
+		"context": "AgentPanel || MessageEditor > Editor",
+		"unbind": {
+			"cmd-shift-i": "workspace::ToggleRightDock",
+		},
+	},
+	{
+		"context": "AgentPanel || MessageEditor > Editor",
+		"unbind": {
+			"cmd-i": "workspace::ToggleRightDock",
+		},
+	},
+	{
+		"context": "AgentPanel || MessageEditor > Editor",
+		"unbind": {
+			"cmd-shift-i": "workspace::ToggleRightDock",
+		},
+	},
+	{
+		"context": "AgentPanel || MessageEditor > Editor",
+		"unbind": {
+			"cmd-r": "agent::NewThread",
+		},
+	},
+	{
+		"context": "AgentPanel || MessageEditor > Editor",
+		"unbind": {
+			"cmd-l": "workspace::ToggleRightDock",
+		},
+	},
+	{
+		"context": "AgentPanel || MessageEditor > Editor",
+		"unbind": {
+			"cmd-shift-l": "workspace::ToggleRightDock",
+		},
+	},
+	{
+		"context": "Workspace",
+		"unbind": {
+			"cmd-shift-l": "agent::ToggleFocus",
+		},
+	},
+	{
+		"context": "Editor && mode == full",
+		"unbind": {
+			"cmd-k": "assistant::InlineAssist",
+		},
+	},
+	{
+		"context": "Workspace",
+		"unbind": {
+			"ctrl-shift-g": "git_panel::ToggleFocus",
+		},
+	},
+	{
+		"context": "Terminal",
+		"unbind": {
+			"cmd-k": "assistant::InlineAssist",
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"cmd-shift-g": "git_panel::ToggleFocus",
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"cmd-shift-a": "workspace::ToggleLeftDock",
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"cmd-b": "multi_workspace::ToggleWorkspaceSidebar",
+		},
+	},
+	{
+		"context": "Editor && mode == full",
+		"bindings": {
+			"cmd-i": "assistant::InlineAssist",
+		},
+	},
+	{
+		"context": "Terminal",
+		"bindings": {
+			"cmd-i": "assistant::InlineAssist",
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"ctrl-1": ["workspace::ActivatePane", 0],
+		},
+	},
+	{
+		"context": "Workspace",
+		"unbind": {
+			"cmd-1": ["workspace::ActivatePane", 0],
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"ctrl-2": ["workspace::ActivatePane", 1],
+		},
+	},
+	{
+		"context": "Workspace",
+		"unbind": {
+			"cmd-2": ["workspace::ActivatePane", 1],
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"ctrl-3": ["workspace::ActivatePane", 2],
+		},
+	},
+	{
+		"context": "Workspace",
+		"unbind": {
+			"cmd-3": ["workspace::ActivatePane", 2],
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"ctrl-4": ["workspace::ActivatePane", 3],
+		},
+	},
+	{
+		"context": "Workspace",
+		"unbind": {
+			"cmd-4": ["workspace::ActivatePane", 3],
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"ctrl-5": ["workspace::ActivatePane", 4],
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"ctrl-6": ["workspace::ActivatePane", 5],
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"ctrl-7": ["workspace::ActivatePane", 6],
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"ctrl-8": ["workspace::ActivatePane", 7],
+		},
+	},
+	{
+		"context": "Workspace",
+		"unbind": {
+			"cmd-8": ["workspace::ActivatePane", 7],
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"ctrl-9": ["workspace::ActivatePane", 8],
+		},
+	},
+	{
+		"context": "Workspace",
+		"unbind": {
+			"cmd-9": ["workspace::ActivatePane", 8],
+		},
+	},
+	{
+		"context": "Pane",
+		"bindings": {
+			"cmd-1": ["pane::ActivateItem", 0],
+		},
+	},
+	{
+		"context": "Pane",
+		"unbind": {
+			"ctrl-1": ["pane::ActivateItem", 0],
+		},
+	},
+	{
+		"context": "Pane",
+		"bindings": {
+			"cmd-2": ["pane::ActivateItem", 1],
+		},
+	},
+	{
+		"context": "Pane",
+		"unbind": {
+			"ctrl-2": ["pane::ActivateItem", 1],
+		},
+	},
+	{
+		"context": "Pane",
+		"bindings": {
+			"cmd-3": ["pane::ActivateItem", 2],
+		},
+	},
+	{
+		"context": "Pane",
+		"unbind": {
+			"ctrl-3": ["pane::ActivateItem", 2],
+		},
+	},
+	{
+		"context": "Pane",
+		"bindings": {
+			"cmd-4": ["pane::ActivateItem", 3],
+		},
+	},
+	{
+		"context": "Pane",
+		"unbind": {
+			"ctrl-4": ["pane::ActivateItem", 3],
+		},
+	},
+	{
+		"context": "Pane",
+		"bindings": {
+			"cmd-5": ["pane::ActivateItem", 4],
+		},
+	},
+	{
+		"context": "Pane",
+		"unbind": {
+			"ctrl-5": ["pane::ActivateItem", 4],
+		},
+	},
+	{
+		"context": "Pane",
+		"bindings": {
+			"cmd-6": ["pane::ActivateItem", 5],
+		},
+	},
+	{
+		"context": "Pane",
+		"unbind": {
+			"ctrl-6": ["pane::ActivateItem", 5],
+		},
+	},
+	{
+		"context": "Pane",
+		"bindings": {
+			"cmd-7": ["pane::ActivateItem", 6],
+		},
+	},
+	{
+		"context": "Pane",
+		"unbind": {
+			"ctrl-7": ["pane::ActivateItem", 6],
+		},
+	},
+	{
+		"context": "Pane",
+		"bindings": {
+			"cmd-8": ["pane::ActivateItem", 7],
+		},
+	},
+	{
+		"context": "Pane",
+		"unbind": {
+			"ctrl-8": ["pane::ActivateItem", 7],
+		},
+	},
+	{
+		"context": "Pane",
+		"bindings": {
+			"cmd-9": ["pane::ActivateItem", 8],
+		},
+	},
+	{
+		"context": "Pane",
+		"unbind": {
+			"ctrl-9": ["pane::ActivateItem", 8],
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"cmd-shift-j": [
+				"workspace::DecreaseActiveDockSize",
+				{
+					"px": 0,
+				},
+			],
+		},
+	},
+	{
+		"context": "Workspace",
+		"unbind": {
+			"ctrl-alt--": [
+				"workspace::DecreaseActiveDockSize",
+				{
+					"px": 0,
+				},
+			],
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"cmd-shift-k": [
+				"workspace::IncreaseActiveDockSize",
+				{
+					"px": 0,
+				},
+			],
+		},
+	},
+	{
+		"context": "Workspace",
+		"unbind": {
+			"ctrl-alt-=": [
+				"workspace::IncreaseActiveDockSize",
+				{
+					"px": 0,
+				},
+			],
+		},
+	},
+	{
+		"context": "Editor",
+		"unbind": {
+			"cmd-shift-k": "editor::DeleteLine",
+		},
+	},
+	{
+		"context": "ProjectSearchBar",
+		"unbind": {
+			"cmd-shift-j": "project_search::ToggleFilters",
+		},
+	},
+	{
+		"context": "ProjectSearchView",
+		"unbind": {
+			"cmd-shift-j": "project_search::ToggleFilters",
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"cmd-shift-c": ["task::Spawn", { "task_name": "external-ghostty" }],
+		},
+	},
+ {
+  "unbind": {
+   "cmd-shift-c": "collab_panel::ToggleFocus"
+  }
+ },
+ {
+  "context": "AgentPanel || MessageEditor > Editor",
+  "bindings": {
+   "shift-tab": "agent::ToggleProfileSelector"
+  }
+ },
+ {
+  "context": "AgentPanel || MessageEditor > Editor",
+  "unbind": {
+   "cmd-.": "agent::ToggleProfileSelector"
+  }
+ },
+ {
+  "context": "InlineAssistant > Editor",
+  "bindings": {
+   "cmd-.": "agent::ToggleModelSelector"
+  }
+ },
+ {
+  "context": "InlineAssistant > Editor",
+  "unbind": {
+   "alt-cmd-/": "agent::ToggleModelSelector"
+  }
+ },
+ {
+  "context": "AgentPanel || MessageEditor > Editor",
+  "bindings": {
+   "cmd-.": "agent::ToggleModelSelector"
+  }
+ },
+ {
+  "context": "AgentPanel || MessageEditor > Editor",
+  "unbind": {
+   "cmd-/": "agent::ToggleModelSelector"
+  }
+ },
+ {
+  "context": "AcpThread > Editor",
+  "unbind": {
+   "ctrl-'": "agent::CycleThinkingEffort"
+  }
+ },
+ {
+  "context": "AcpThread > Editor",
+  "unbind": {
+   "alt-cmd-k": "agent::ToggleThinkingMode"
+  }
+ },
+ {
+  "context": "AcpThread > Editor",
+  "bindings": {
+   "cmd-,": "agent::ToggleThinkingEffortMenu"
+  }
+ },
+ {
+  "context": "AcpThread > Editor",
+  "unbind": {
+   "alt-cmd-'": "agent::ToggleThinkingEffortMenu"
+  }
+ },
+ {
+  "context": "!SettingsWindow",
+  "unbind": {
+   "cmd-,": "zed::OpenSettings"
+  }
+ },
+ {
+  "context": "SettingsWindow",
+  "unbind": {
+   "cmd-,": "settings_editor::OpenCurrentFile"
+  }
+ }
+]

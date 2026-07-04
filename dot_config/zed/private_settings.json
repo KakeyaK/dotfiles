@@ -1,0 +1,170 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+	"diff_view_style": "unified",
+ "toolbar": {
+  "breadcrumbs": true
+ },
+ "title_bar": {
+  "show_user_picture": true,
+  "show_user_menu": true,
+  "show_branch_status_icon": true
+ },
+ "ui_font_family": ".ZedSans",
+ "buffer_font_family": "Menlo",
+ "cli_default_open_behavior": "new_window",
+	"agent": {
+		"inline_assistant_model": {
+			"provider": "copilot_chat",
+			"model": "gemini-3-flash-preview",
+			"enable_thinking": false,
+		},
+		"default_model": {
+			"provider": "copilot_chat",
+			"model": "gpt-5-mini",
+			"enable_thinking": true,
+			"effort": "high",
+		},
+		"favorite_models": [],
+		"model_parameters": [],
+	},
+	"terminal": {
+		"show_count_badge": true,
+  "font_weight": 400.0,
+		"font_size": 14.0,
+		"font_family": "JetBrainsMono Nerd Font",
+		"font_fallbacks": ["Hack Nerd Font"],
+		"max_scroll_history_lines": 30000,
+	},
+	"project_panel": {
+		"auto_fold_dirs": false,
+	},
+	"autosave": {
+		"after_delay": {
+			"milliseconds": 1000,
+		},
+	},
+	"buffer_font_fallbacks": [
+		"Monaco",
+		"Courier New",
+		"monospace",
+		"Hack Nerd Font",
+		"SF Pro",
+	],
+	"file_types": {
+		"yaml": ["*.yml", "*.yml"],
+		"csharp": ["*.cs", "*.cs"],
+		"sql": ["*.sql", "*.sql"],
+	},
+	"soft_wrap": "editor_width",
+	"hard_tabs": true,
+	"agent_servers": {
+		"github-copilot-cli": {
+			"type": "registry",
+		},
+		"claude-acp": {
+			"default_config_options": {
+				"mode": "auto",
+				"effort": "default",
+				"model": "opus",
+			},
+			"type": "registry",
+		},
+	},
+	"base_keymap": "Cursor",
+	"icon_theme": {
+		"mode": "dark",
+		"light": "Material Icon Theme",
+		"dark": "Material Icon Theme",
+	},
+	"ui_font_size": 16,
+	"buffer_font_size": 15,
+	"theme": {
+		"mode": "dark",
+		"light": "One Light",
+		"dark": "Dracula",
+	},
+	"theme_overrides": {
+		"Dracula": {
+			"background.appearance": "blurred",
+
+			"background": "#101010c8",
+			"surface.background": "#101010c8",
+			"elevated_surface.background": "#161616",
+
+			"border": "#a186c7a0",
+			"border.variant": "#00000000",
+			"border.focused": "#FFC799",
+			"border.selected": "#FFC799",
+			"border.transparent": "#00000000",
+			"border.disabled": "#00000000",
+
+			"element.background": "#1C1C1C",
+			"element.hover": "#282828",
+			"element.active": "#282828",
+			"element.selected": "#232323",
+			"element.disabled": "#101010",
+			"drop_target.background": "#FFC79950",
+
+			"icon": "#A0A0A0",
+			"icon.muted": "#A0A0A0",
+			"icon.disabled": "#7E7E7E",
+			"icon.placeholder": "#7E7E7E",
+			"icon.accent": "#FFC799",
+
+			"status_bar.background": "#101010b8",
+			"title_bar.background": "#101010b8",
+			"title_bar.inactive_background": "#101010b8",
+
+			"toolbar.background": "#00000000",
+			"tab_bar.background": "#00000000",
+			"tab.inactive_background": "#00000000",
+			"tab.active_background": "#1C1C1C",
+
+			"search.match_background": "#FFFFFF25",
+			"search.active_match_background": "#FFC79950",
+
+			"panel.background": "#00000000",
+			"panel.focused_border": "#00000000",
+			"panel.indent_guide": "#282828",
+			"panel.indent_guide_active": "#505050",
+			"panel.indent_guide_hover": "#FFC799",
+			"panel.overlay_background": "#161616",
+
+			"pane.focused_border": "#00000000",
+			"pane_group.border": "#00000000",
+
+			"scrollbar.track.background": "#00000000",
+
+			"editor.foreground": "#FFFFFF",
+			"editor.background": "#00000000",
+			"editor.gutter.background": "#00000000",
+			"editor.subheader.background": "#161616",
+			"editor.active_line.background": "#00000000",
+			"editor.highlighted_line.background": "#FFFFFF10",
+			"editor.line_number": "#ffffff75",
+			"editor.document_highlight.read_background": "#FFFFFF15",
+			"editor.document_highlight.write_background": "#FFFFFF15",
+
+			"text": "#FFFFFFFF",
+			"text.muted": "#FFFFFFe0",
+			"text.placeholder": "#FFFFFFe0",
+			"text.accent": "#C9A8F9FF",
+			"hidden": "#C9A8F9a5",
+			"ignored": "#C9A8F9a5",
+			"text.disabled": "#C9A8F9a5",
+
+			"syntax": {
+				"comment": {
+					"color": "#6272a4ff",
+				},
+			},
+		},
+	},
+}
