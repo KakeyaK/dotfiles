@@ -47,7 +47,7 @@ persistent-workspaces = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'q',
     inner.vertical =   10
     outer.left =       5
     outer.bottom =     0
-    outer.top = [{ monitor.'built-in' = 5 }, { monitor.'LG HDR WFHD' = 35 }, 5]
+    outer.top = [{ monitor.'built-in' = 5 }, { monitor.'LG HDR WFHD' = 35 }, { monitor.'DELL U2715H' = 35}, 35]
     outer.right =      5
 
 [mode.main.binding]
