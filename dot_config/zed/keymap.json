@@ -7,12 +7,6 @@
 // from the command palette.
 [
 	{
-		"context": "FileFinder || FileFinder > Picker > Editor",
-		"unbind": {
-			"cmd-shift-a": "file_finder::ToggleSplitMenu",
-		},
-	},
-	{
 		"context": "Workspace",
 		"unbind": {
 			"alt-cmd-j": "multi_workspace::ToggleWorkspaceSidebar",
@@ -374,81 +368,81 @@
 			"cmd-shift-c": ["task::Spawn", { "task_name": "external-ghostty" }],
 		},
 	},
- {
-  "unbind": {
-   "cmd-shift-c": "collab_panel::ToggleFocus"
-  }
- },
- {
-  "context": "AgentPanel || MessageEditor > Editor",
-  "bindings": {
-   "shift-tab": "agent::ToggleProfileSelector"
-  }
- },
- {
-  "context": "AgentPanel || MessageEditor > Editor",
-  "unbind": {
-   "cmd-.": "agent::ToggleProfileSelector"
-  }
- },
- {
-  "context": "InlineAssistant > Editor",
-  "bindings": {
-   "cmd-.": "agent::ToggleModelSelector"
-  }
- },
- {
-  "context": "InlineAssistant > Editor",
-  "unbind": {
-   "alt-cmd-/": "agent::ToggleModelSelector"
-  }
- },
- {
-  "context": "AgentPanel || MessageEditor > Editor",
-  "bindings": {
-   "cmd-.": "agent::ToggleModelSelector"
-  }
- },
- {
-  "context": "AgentPanel || MessageEditor > Editor",
-  "unbind": {
-   "cmd-/": "agent::ToggleModelSelector"
-  }
- },
- {
-  "context": "AcpThread > Editor",
-  "unbind": {
-   "ctrl-'": "agent::CycleThinkingEffort"
-  }
- },
- {
-  "context": "AcpThread > Editor",
-  "unbind": {
-   "alt-cmd-k": "agent::ToggleThinkingMode"
-  }
- },
- {
-  "context": "AcpThread > Editor",
-  "bindings": {
-   "cmd-,": "agent::ToggleThinkingEffortMenu"
-  }
- },
- {
-  "context": "AcpThread > Editor",
-  "unbind": {
-   "alt-cmd-'": "agent::ToggleThinkingEffortMenu"
-  }
- },
- {
-  "context": "!SettingsWindow",
-  "unbind": {
-   "cmd-,": "zed::OpenSettings"
-  }
- },
- {
-  "context": "SettingsWindow",
-  "unbind": {
-   "cmd-,": "settings_editor::OpenCurrentFile"
-  }
- }
+	{
+		"unbind": {
+			"cmd-shift-c": "collab_panel::ToggleFocus",
+		},
+	},
+	{
+		"context": "AgentPanel || MessageEditor > Editor",
+		"bindings": {
+			"shift-tab": "agent::ToggleProfileSelector",
+		},
+	},
+	{
+		"context": "AgentPanel || MessageEditor > Editor",
+		"unbind": {
+			"cmd-.": "agent::ToggleProfileSelector",
+		},
+	},
+	{
+		"context": "InlineAssistant > Editor",
+		"bindings": {
+			"cmd-.": "agent::ToggleModelSelector",
+		},
+	},
+	{
+		"context": "InlineAssistant > Editor",
+		"unbind": {
+			"alt-cmd-/": "agent::ToggleModelSelector",
+		},
+	},
+	{
+		"context": "AgentPanel || MessageEditor > Editor",
+		"bindings": {
+			"cmd-.": "agent::ToggleModelSelector",
+		},
+	},
+	{
+		"context": "AgentPanel || MessageEditor > Editor",
+		"unbind": {
+			"cmd-/": "agent::ToggleModelSelector",
+		},
+	},
+	{
+		"context": "AcpThread > Editor",
+		"unbind": {
+			"ctrl-'": "agent::CycleThinkingEffort",
+		},
+	},
+	{
+		"context": "AcpThread > Editor",
+		"unbind": {
+			"alt-cmd-k": "agent::ToggleThinkingMode",
+		},
+	},
+	{
+		"context": "AcpThread > Editor",
+		"bindings": {
+			"cmd-,": "agent::ToggleThinkingEffortMenu",
+		},
+	},
+	{
+		"context": "AcpThread > Editor",
+		"unbind": {
+			"alt-cmd-'": "agent::ToggleThinkingEffortMenu",
+		},
+	},
+	{
+		"context": "!SettingsWindow",
+		"unbind": {
+			"cmd-,": "zed::OpenSettings",
+		},
+	},
+	{
+		"context": "SettingsWindow",
+		"unbind": {
+			"cmd-,": "settings_editor::OpenCurrentFile",
+		},
+	},
 ]
