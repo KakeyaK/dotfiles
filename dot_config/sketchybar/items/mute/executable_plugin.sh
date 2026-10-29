@@ -1,9 +1,8 @@
 #!/bin/bash
 
-MIC_VOLUME=$(osascript -e 'input volume of (get volume settings)')
-
-if [[ $MIC_VOLUME -eq 0 ]]; then
+# Vorssaint owns the mic mute; it records the state in its preferences.
+if [[ $(defaults read com.vorssaint.utils micMuteActive 2>/dev/null) == 1 ]]; then
 	sketchybar --set mic icon=󰍭
-elif [[ $MIC_VOLUME -gt 0 ]]; then
+else
 	sketchybar --set mic icon=󰍬
 fi
