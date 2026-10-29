@@ -5,3 +5,7 @@ name = Kim Kakeya
 email = kimkakeya@gmail.com
 [init]
 	defaultBranch = main
+[alias]
+	fpush = push --force-with-lease --force-if-includes
+[pull]
+	ff = only
