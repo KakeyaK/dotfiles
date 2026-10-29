@@ -108,3 +108,6 @@ export PATH="/Users/kim/.antigravity/antigravity/bin:$PATH"
 # STARSHIP PROMPT (Must be at the end)
 # =============================================================================
 eval "$(starship init zsh)"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/Users/kim/.local/bin:$PATH"
+flag-colorscript
