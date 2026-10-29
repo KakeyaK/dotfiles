@@ -32,4 +32,7 @@
 ## GIT
 Unless explicitly asked, do NOT use git commands that alter the repository status, like git add and git rm. 
 
+## Private diary
+Never read, search, summarise or edit files in `~/Documents/pessoal/obsidian/pixels/Journal/Daily Notes/`, and never run the diary-tools Python scripts against the real vault (they read those notes). The rest of the vault (template, summaries, `Categorias/`) is fine to inspect; for daily-note examples use the invented vault in the plugin's tests. A PreToolUse hook (`~/.claude/hooks/protect-daily-notes.py`) enforces this, and it also blocks shell commands that merely mention that folder.
+
 @RTK.md

@@ -12,6 +12,10 @@
       "Bash(rtk proxy *)",
       "Bash(/bin/echo test123 *)",
       "Bash(rtk find *)"
+    ],
+    "deny": [
+      "Read(~/Documents/pessoal/obsidian/pixels/Journal/Daily Notes/**)",
+      "Edit(~/Documents/pessoal/obsidian/pixels/Journal/Daily Notes/**)"
     ]
   },
   "model": "opus",
@@ -38,6 +42,15 @@
     ],
     "PreToolUse": [
       {
+        "matcher": "Read|Grep|Glob|Edit|Write|MultiEdit|NotebookEdit|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/python3 /Users/kim/.claude/hooks/protect-daily-notes.py"
+          }
+        ]
+      },
+      {
         "matcher": "Bash",
         "hooks": [
           {
@@ -56,7 +69,7 @@
     "pyright-lsp@claude-plugins-official": true,
     "typescript-lsp@claude-plugins-official": false,
     "claude-retrospective@bitwarden-marketplace": true,
-    "superpowers@claude-plugins-official": true
+    "superpowers@claude-plugins-official": false
   },
   "extraKnownMarketplaces": {
     "bitwarden-marketplace": {
@@ -67,6 +80,11 @@
     }
   },
   "effortLevel": "high",
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "medium"
+    }
+  },
   "theme": "dark",
   "agentPushNotifEnabled": true
 }
