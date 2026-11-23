@@ -9,7 +9,9 @@ INPUT=$(cat)
 
 /usr/bin/afplay /System/Library/Sounds/Glass.aiff >/dev/null 2>&1 &
 
-if [ "$(osascript -e 'output muted of (get volume settings)' 2>/dev/null)" = "true" ]; then
+# Volume 0 counts as muted too: turning the volume all the way down leaves "output muted" false.
+VOL=$(osascript -e 'set s to get volume settings' -e '(output muted of s as text) & "," & (output volume of s as text)' 2>/dev/null)
+if [ "${VOL%%,*}" = "true" ] || [ "${VOL#*,}" = "0" ]; then
   MSG=$(printf '%s' "$INPUT" | /usr/bin/jq -r '.message // empty' 2>/dev/null)
   [ -z "$MSG" ] && MSG="$FALLBACK"
   osascript -e 'on run argv
